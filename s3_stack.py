@@ -12,7 +12,7 @@ class MyS3BucketStack(Stack):
         # If you want CloudFormation to pick a unique bucket name, omit bucket_name.
         bucket = s3.Bucket(
             self,
-            "MyBucket",
+            "MyBucket-6568789",
             # bucket_name="my-unique-bucket-name-12345",  # optional, must be globally unique
             versioned=True,
             removal_policy=RemovalPolicy.DESTROY,   # DEV only: deletes bucket on stack destroy
